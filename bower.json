@@ -1,0 +1,34 @@
+{
+  "name": "cntsyz",
+  "version": "0.0.0",
+  "description": "Reconstruct class structure.",
+  "main": "cntsyz.deploy.js",
+  "support": "cntsyz.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "reconstruct",
+    "class",
+    "structure",
+    "cntsyz"
+  ],
+  "homepage": "https://github.com/volkovasystems/cntsyz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "asyum": "^0.5.0",
+    "clazof": "^0.27.0",
+    "defyn": "^0.4.0",
+    "falzy": "^0.19.0",
+    "kein": "^0.25.0",
+    "protype": "^0.21.0",
+    "truly": "^0.18.0"
+  }
+}
