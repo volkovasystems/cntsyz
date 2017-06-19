@@ -1,8 +1,59 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./cntsyz.deploy.js">
-		</script>
+		<title>cntsyz unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./cntsyz.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "cntsyz unit test", function( assert ) {
+
+				const PROTOTYPE = Symbol.for( "prototype" );
+				const STATIC = Symbol.for( "static" );
+
+				let residue = ( new ( function Residue( ){
+					this[ PROTOTYPE ] = {
+						"test": {
+							"writable": true,
+							"configurable": true,
+							"enumerable": true,
+							"value": function test( ){
+								return "test";
+							}
+						}
+					},
+
+					this [ STATIC ] = {
+						"sample": {
+							"writable": true,
+							"configurable": true,
+							"enumerable": true,
+							"value": function sample( ){
+								return "sample";
+							}
+						}
+					}
+				} )( ) );
+
+				class ClassA { }
+
+				cntsyz( ClassA, residue );
+
+				assert.equal( ClassA.sample( ), "sample", "should be equal" );
+
+				assert.equal( ( new ClassA( ) ).test( ), "test", "should be equal" );
+				
+			} );
+		</script>
+	</body>
 </html>
