@@ -1,6 +1,6 @@
 {
   "name": "cntsyz",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Reconstruct class structure.",
   "main": "cntsyz.js",
   "support": "cntsyz.support.js",
@@ -21,27 +21,31 @@
     "cntsyz"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/cntsyz/issues"
   },
   "homepage": "https://github.com/volkovasystems/cntsyz#readme",
   "dependencies": {
-    "asyum": "^0.5.0",
+    "asyum": "^0.6.0",
     "babel-runtime": "^6.23.0",
-    "clazof": "^0.27.0",
-    "defyn": "^0.4.0",
-    "falzy": "^0.19.0",
-    "kein": "^0.25.0",
-    "protype": "^0.21.0",
-    "truly": "^0.18.0"
+    "clazof": "^0.31.0",
+    "defyn": "^0.5.0",
+    "falzy": "^0.20.0",
+    "kein": "^0.26.0",
+    "protype": "^0.22.0",
+    "truly": "^0.19.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
+    "babel-core": "^6.25.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.5.1"
+    "webpack": "^2.6.1"
   }
 }
