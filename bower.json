@@ -1,6 +1,6 @@
 {
   "name": "cntsyz",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Reconstruct class structure.",
   "main": "cntsyz.deploy.js",
   "support": "cntsyz.support.js",
@@ -25,9 +25,9 @@
     "tests"
   ],
   "dependencies": {
-    "asyum": "^0.6.0",
+    "asyum": "^0.7.0",
     "clazof": "^0.31.0",
-    "defyn": "^0.5.0",
+    "defyn": "^0.6.0",
     "falzy": "^0.20.0",
     "kein": "^0.26.0",
     "protype": "^0.22.0",
