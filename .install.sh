@@ -5,7 +5,6 @@ clazof \
 defyn \
 falzy \
 kein \
-protype \
 truly \
 --save && \
 yarn add \
@@ -22,7 +21,6 @@ clazof \
 defyn \
 falzy \
 kein \
-protype \
 truly \
 --save \
 --force-latest

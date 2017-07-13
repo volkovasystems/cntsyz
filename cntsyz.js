@@ -60,7 +60,6 @@
 			"defyn": "defyn",
 			"falzy": "falzy",
 			"kein": "kein",
-			"protype": "protype",
 			"truly": "truly"
 		}
 	@end-include
@@ -71,7 +70,6 @@ const clazof = require( "clazof" );
 const defyn = require( "defyn" );
 const falzy = require( "falzy" );
 const kein = require( "kein" );
-const protype = require( "protype" );
 const truly = require( "truly" );
 
 const PROTOTYPE = Symbol.for( "prototype" );
@@ -87,7 +85,7 @@ const cntsyz = function cntsyz( blueprint, residue ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( blueprint ) || !protype( blueprint, FUNCTION ) ){
+	if( falzy( blueprint ) || typeof blueprint != "function" ){
 		throw new Error( "invalid blueprint" );
 	}
 
